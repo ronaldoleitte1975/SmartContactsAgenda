@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SmartContactsAgenda</string>
+    <string name="button_login">Login</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Senha</string>
+    <string name="header_new_user">Novo Usuário</string>
+    <string name="label_name">Nome</string>
+    <string name="button_create_account">Criar Conta</string>
 </resources>

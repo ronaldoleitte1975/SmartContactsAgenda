@@ -1,7 +1,8 @@
-package br.com.fiap.smartcontactsagenda
+package br.com.fiap.smartcontactsagenda.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.fiap.smartcontactsagenda.R
 
 class MainActivity : AppCompatActivity() {
 
