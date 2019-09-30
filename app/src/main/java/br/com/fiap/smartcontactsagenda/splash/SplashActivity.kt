@@ -9,7 +9,7 @@ import android.os.Handler
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import br.com.fiap.smartcontactsagenda.R
-import br.com.fiap.smartcontactsagenda.form.FormActivity
+import br.com.fiap.smartcontactsagenda.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -30,7 +30,8 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun loadLogin(){
-        val nextScreen = Intent(this@SplashActivity,FormActivity::class.java)
+        val nextScreen = Intent(this@SplashActivity,
+            LoginActivity::class.java)
         startActivity(nextScreen)
         finish()
     }
@@ -43,7 +44,7 @@ class SplashActivity : AppCompatActivity() {
         ivLogo.startAnimation(anim)
         //Chama a próxima tela após 3,5 segundos definido na SPLASH_DISPLAY_LENGTH
         Handler().postDelayed({
-            val proximaTela = Intent(this@SplashActivity, FormActivity::class.java)
+            val proximaTela = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(proximaTela)
             finish()
         }, TEMPO_AGUARDO_SPLASHSCREEN)
