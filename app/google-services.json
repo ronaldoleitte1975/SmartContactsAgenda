@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "679071967136",
+    "firebase_url": "https://smartcontactagenda.firebaseio.com",
+    "project_id": "smartcontactagenda",
+    "storage_bucket": "smartcontactagenda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679071967136:android:4fd78b47b3c103548226c5",
+        "android_client_info": {
+          "package_name": "br.com.fiap.smartcontactsagenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679071967136-hfcugdhclks0ag7b2d04b5o3qatbk24b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fiap.smartcontactsagenda",
+            "certificate_hash": "95265736d76db6f7cc789e1aea4dd4a7c0584a3c"
+          }
+        },
+        {
+          "client_id": "679071967136-fe7opoo0fqj7t2kgs2hd9cblnnafmprj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaA4LkOhQzlPK0wFjgc75iGbuZ3XmLbT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679071967136-fe7opoo0fqj7t2kgs2hd9cblnnafmprj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
