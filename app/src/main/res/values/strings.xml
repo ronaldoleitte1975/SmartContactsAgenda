@@ -6,4 +6,5 @@
     <string name="header_new_user">Novo Usuário</string>
     <string name="label_name">Nome</string>
     <string name="button_create_account">Criar Conta</string>
+    <string name="label_new_account">Ainda não tem conta? Crie uma</string>
 </resources>

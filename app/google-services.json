@@ -1,20 +1,69 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "679071967136",
     "firebase_url": "https://smartcontactagenda.firebaseio.com",
     "project_id": "smartcontactagenda",
     "storage_bucket": "smartcontactagenda.appspot.com"
+=======
+    "project_number": "706131631069",
+    "firebase_url": "https://smartcontactsagenda-971db.firebaseio.com",
+    "project_id": "smartcontactsagenda-971db",
+    "storage_bucket": "smartcontactsagenda-971db.appspot.com"
+>>>>>>> 370d810e91810d52ac7496dc88f5601883f1425d
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:679071967136:android:4fd78b47b3c103548226c5",
+=======
+        "mobilesdk_app_id": "1:706131631069:android:51fb7229f74af39dcff434",
+        "android_client_info": {
+          "package_name": "br.com.fiap.sca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706131631069-3io6tqj2n1o2hnt7l4r2b3mnot1sl7no.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fiap.sca",
+            "certificate_hash": "95265736d76db6f7cc789e1aea4dd4a7c0584a3c"
+          }
+        },
+        {
+          "client_id": "706131631069-g9002g3g1b8qa7qilbqdg9grmmggjv6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT80erzc9h0j30FCoVFxzCMFrv9SqYybs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706131631069-g9002g3g1b8qa7qilbqdg9grmmggjv6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706131631069:android:529601c7b0aec308cff434",
+>>>>>>> 370d810e91810d52ac7496dc88f5601883f1425d
         "android_client_info": {
           "package_name": "br.com.fiap.smartcontactsagenda"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "679071967136-hfcugdhclks0ag7b2d04b5o3qatbk24b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -24,19 +73,38 @@
         },
         {
           "client_id": "679071967136-fe7opoo0fqj7t2kgs2hd9cblnnafmprj.apps.googleusercontent.com",
+=======
+          "client_id": "706131631069-taa6t5j27hcira3ksh73sccq4bg6pd6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fiap.smartcontactsagenda",
+            "certificate_hash": "1ce29b8d4073dc6bc28596a79a32d00bca417251"
+          }
+        },
+        {
+          "client_id": "706131631069-g9002g3g1b8qa7qilbqdg9grmmggjv6l.apps.googleusercontent.com",
+>>>>>>> 370d810e91810d52ac7496dc88f5601883f1425d
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyDaA4LkOhQzlPK0wFjgc75iGbuZ3XmLbT8"
+=======
+          "current_key": "AIzaSyBT80erzc9h0j30FCoVFxzCMFrv9SqYybs"
+>>>>>>> 370d810e91810d52ac7496dc88f5601883f1425d
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "679071967136-fe7opoo0fqj7t2kgs2hd9cblnnafmprj.apps.googleusercontent.com",
+=======
+              "client_id": "706131631069-g9002g3g1b8qa7qilbqdg9grmmggjv6l.apps.googleusercontent.com",
+>>>>>>> 370d810e91810d52ac7496dc88f5601883f1425d
               "client_type": 3
             }
           ]
