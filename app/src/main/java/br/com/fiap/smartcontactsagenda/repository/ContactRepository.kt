@@ -9,29 +9,27 @@ interface ContactRepository {
         user: User,
         sort: String,
         size: Int,
-        onComplete:(List<Contact>) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (List<Contact>) -> Unit,
+        onError: (Throwable) -> Unit
     )
 
     fun updateContact(
         contact: Contact,
-        onComplete:(Contact?) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (Contact?) -> Unit,
+        onError: (Throwable) -> Unit
     )
 
     fun deleteContact(
         contact: Contact,
-        onComplete:(Contact?) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (Contact?) -> Unit,
+        onError: (Throwable) -> Unit
     )
 
     fun addContact(
         contact: Contact,
-        onComplete:(Contact?) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (Contact?) -> Unit,
+        onError: (Throwable) -> Unit
     )
-
-
 
 
 }
