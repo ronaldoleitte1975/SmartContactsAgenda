@@ -4,15 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.MainActivity">
+    tools:context=".view.main.MainActivity">
+
+    <ImageView
+        android:id="@+id/btnListContact"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/label_list_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toEndOf="@+id/btnEditContact"
+        app:layout_constraintTop_toBottomOf="@+id/textRemoveContact"
+        app:srcCompat="@drawable/ic_supervised_user_circle_24px" />
+
+    <ImageView
+        android:id="@+id/btnRemoveContact"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/label_remove_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/btnAddContact"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_add_disabled_24px" />
+
+    <ImageView
+        android:id="@+id/btnAddContact"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/label_add_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_add_24px" />
 
     <TextView
+        android:id="@+id/textRemoveContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/label_remove_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/textAddContact"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemoveContact" />
+
+    <TextView
+        android:id="@+id/textAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:text="@string/label_add_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddContact" />
+
+    <ImageView
+        android:id="@+id/btnEditContact"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/label_edit_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddContact"
+        app:srcCompat="@drawable/ic_edit_24px" />
+
+    <TextView
+        android:id="@+id/textEditContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:text="@string/label_edit_contact"
+        app:layout_constraintEnd_toStartOf="@+id/textListContact"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditContact" />
+
+    <ImageView
+        android:id="@+id/btnAbout"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/label_about_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textListContact"
+        app:srcCompat="@drawable/ic_info_24px" />
+
+    <TextView
+        android:id="@+id/textListContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="@string/label_list_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListContact" />
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="@string/label_about_contact"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbout"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

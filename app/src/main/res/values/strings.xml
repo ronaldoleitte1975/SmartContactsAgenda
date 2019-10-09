@@ -7,4 +7,9 @@
     <string name="label_name">Nome</string>
     <string name="button_create_account">Criar Conta</string>
     <string name="label_new_account">Ainda não tem conta? Crie uma</string>
+    <string name="label_add_contact">Adicionar Contato</string>
+    <string name="label_remove_contact">Remover Contato</string>
+    <string name="label_edit_contact">Editar Contado</string>
+    <string name="label_about_contact">Sobre</string>
+    <string name="label_list_contact">Listar Contatos</string>
 </resources>

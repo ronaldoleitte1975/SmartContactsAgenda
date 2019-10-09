@@ -1,4 +1,4 @@
-package br.com.fiap.smartcontactsagenda.signup
+package br.com.fiap.smartcontactsagenda.view.signup
 
 import android.content.Intent
 import android.os.Bundle

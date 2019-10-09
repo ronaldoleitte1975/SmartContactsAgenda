@@ -1,4 +1,4 @@
-package br.com.fiap.smartcontactsagenda.login
+package br.com.fiap.smartcontactsagenda.view.login
 
 import android.app.Activity
 import android.content.Intent
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.fiap.smartcontactsagenda.R
-import br.com.fiap.smartcontactsagenda.form.FormActivity
-import br.com.fiap.smartcontactsagenda.signup.SignUpActivity
+import br.com.fiap.smartcontactsagenda.view.main.MainActivity
+import br.com.fiap.smartcontactsagenda.view.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -19,8 +19,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        FirebaseAuth.getInstance().signOut()
         mAuth = FirebaseAuth.getInstance()
+
         if (mAuth.currentUser != null) {
             goToHome()
         }
@@ -57,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToHome() {
-        val intent = Intent(this, FormActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
         finish()

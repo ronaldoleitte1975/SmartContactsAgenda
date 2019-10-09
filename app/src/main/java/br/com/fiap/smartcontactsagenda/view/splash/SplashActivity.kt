@@ -1,4 +1,4 @@
-package br.com.fiap.smartcontactsagenda.splash
+package br.com.fiap.smartcontactsagenda.view.splash
 
 
 import android.content.Context
@@ -9,7 +9,7 @@ import android.os.Handler
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import br.com.fiap.smartcontactsagenda.R
-import br.com.fiap.smartcontactsagenda.login.LoginActivity
+import br.com.fiap.smartcontactsagenda.view.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
