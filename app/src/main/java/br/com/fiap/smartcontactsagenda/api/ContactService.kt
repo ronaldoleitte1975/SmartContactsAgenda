@@ -1,6 +1,7 @@
 package br.com.fiap.smartcontactsagenda.api
 
 import br.com.fiap.smartcontactsagenda.model.Contact
+import br.com.fiap.smartcontactsagenda.model.ContactResponse
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -9,9 +10,9 @@ interface ContactService {
     @GET("contact/username/{name}")
     fun getContacts(
         @Query("sort") sort: String,
-        @Path("number") number: String,
+        @Path("username") username: String,
         @Query("size") size: Int
-    ) : Call<Contact>
+    ) : Call<ContactResponse>
 
     @PUT("/contact")
     fun updateContact(

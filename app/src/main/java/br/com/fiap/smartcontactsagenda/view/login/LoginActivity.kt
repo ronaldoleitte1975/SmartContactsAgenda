@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.fiap.smartcontactsagenda.R
+import br.com.fiap.smartcontactsagenda.model.User
 import br.com.fiap.smartcontactsagenda.view.main.MainActivity
 import br.com.fiap.smartcontactsagenda.view.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -15,6 +16,8 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
     private val newUserRequestCode = 1
+
+    private lateinit var user : User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +64,7 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
+
         finish()
     }
 

@@ -2,9 +2,15 @@ package br.com.fiap.smartcontactsagenda.repository
 
 import br.com.fiap.smartcontactsagenda.api.ContactService
 import br.com.fiap.smartcontactsagenda.model.Contact
+import br.com.fiap.smartcontactsagenda.model.ContactResponse
 import br.com.fiap.smartcontactsagenda.model.User
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-class ContactRepositoryImpl : ContactRepository {
+class ContactRepositoryImpl(
+    val contactService: ContactService
+) : ContactRepository {
 
     override fun getContacts(
         user: User,
@@ -13,7 +19,24 @@ class ContactRepositoryImpl : ContactRepository {
         onComplete: (List<Contact>) -> Unit,
         onError: (Throwable) -> Unit
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        contactService.getContacts(sort, user.nome, size).enqueue(object :
+            Callback<ContactResponse> {
+
+            override fun onFailure(call: Call<ContactResponse>, t: Throwable) {
+                onError(t)
+            }
+
+            override fun onResponse(
+                call: Call<ContactResponse>,
+                response: Response<ContactResponse>
+            ) {
+                if (response.isSuccessful) {
+                    onComplete(response.body()?.contacts ?: listOf())
+                } else {
+                    onError(Throwable("Não foi possível realizar a requisição"))
+                }
+            }
+        })
     }
 
     override fun updateContact(
@@ -21,7 +44,21 @@ class ContactRepositoryImpl : ContactRepository {
         onComplete: (Contact?) -> Unit,
         onError: (Throwable) -> Unit
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        contactService
+            .updateContact(contact)
+            .enqueue(object : Callback<Contact> {
+                override fun onFailure(call: Call<Contact>, t: Throwable) {
+                    onError(t)
+                }
+
+                override fun onResponse(call: Call<Contact>, response: Response<Contact>) {
+                    if (response.isSuccessful) {
+                        onComplete(response.body())
+                    } else {
+                        onError(Throwable("Não foi possível realizar a requisição"))
+                    }
+                }
+            })
     }
 
     override fun deleteContact(
@@ -29,7 +66,9 @@ class ContactRepositoryImpl : ContactRepository {
         onComplete: (Contact?) -> Unit,
         onError: (Throwable) -> Unit
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        contactService
+            .deleteContact(contact)
+
     }
 
     override fun addContact(
@@ -37,6 +76,20 @@ class ContactRepositoryImpl : ContactRepository {
         onComplete: (Contact?) -> Unit,
         onError: (Throwable) -> Unit
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        contactService
+            .createContact(contact)
+            .enqueue(object : Callback<Contact> {
+                override fun onFailure(call: Call<Contact>, t: Throwable) {
+                    onError(t)
+                }
+
+                override fun onResponse(call: Call<Contact>, response: Response<Contact>) {
+                    if (response.isSuccessful) {
+                        onComplete(response.body())
+                    } else {
+                        onError(Throwable("Não foi possível realizar a requisição"))
+                    }
+                }
+            })
     }
 }

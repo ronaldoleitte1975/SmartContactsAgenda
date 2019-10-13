@@ -1,5 +1,13 @@
 package br.com.fiap.smartcontactsagenda.model
 
-import java.util.*
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-data class Contact(val id: Long, val phoneNumber: String, val name: String, val email: String, val avatar: String)
+@Parcelize
+data class Contact(
+    val id: Long,
+    val phoneNumber: String,
+    val name: String,
+    val email: String,
+    val avatar: String
+) : Parcelable
